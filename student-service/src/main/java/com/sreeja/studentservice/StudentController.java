@@ -17,7 +17,7 @@ public class StudentController {
     public String getStudents() {
 
         String courses = restTemplate.getForObject(
-                courseServiceUrl + "/courses",
+                "http://COURSE-SERVICE/courses",
                 String.class
         );
 
