@@ -25,7 +25,7 @@ public class StudentController {
         log.info("Fetching students and calling Course Service");
 
         String courses = restTemplate.getForObject(
-                "http://COURSE-SERVICE/courses",
+                courseServiceUrl + "/courses",
                 String.class
         );
 
